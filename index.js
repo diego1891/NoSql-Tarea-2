@@ -15,8 +15,10 @@ dbConnectionMongo();
 app.use("/api/persona", personaRoute);
 app.use("/api/domicilio", domicilioRoute);
 
-
+/*
 app.listen(puerto, () => {
     console.log(`Servidor Express en funcionamiento en el puerto ${puerto}`);
   });
-console.log("Linea 12 index");
+console.log("Linea 12 index");*/
+
+export default app;

@@ -1,4 +1,5 @@
 import {dbConnectionMongo} from "./database/index.js";
+import { dbConnectionRedis } from "./database/redis.js";
 import express from "express";
 import domicilioRoute from "./routes/domicilioRoute.js"
 import personaRoute from "./routes/personaRoute.js"
@@ -11,6 +12,9 @@ const puerto = 3000;
 app.use(express.json());
 
 dbConnectionMongo();
+
+dbConnectionRedis();
+
 
 app.use("/api/persona", personaRoute);
 app.use("/api/domicilio", domicilioRoute);

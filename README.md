@@ -29,6 +29,26 @@ Este proyecto implementa un backend sin interfaz gráfica para almacenar y consu
 5. **Automatización con Jenkins:**
    - Jenkins se utiliza para la automatización de pruebas, proporcionando una integración continua en el proceso de desarrollo.
 
+6. **Pruebas Unitarias con Jest:**
+   - Jest se emplea para realizar pruebas unitarias en el proyecto.
+
+## Endpoints de la API:
+
+1. **Agregar Persona (POST):**
+   - Endpoint: api/persona/agregar`
+
+2. **Agregar Domicilio (POST):**
+   - Endpoint: api/domicilio/agregar`
+
+3. **Consultar Domicilio por CI (GET):**
+   - Endpoint: api/domicilio/consultar/{CI}`
+
+4. **Consultar Domicilios por Criterio (GET):**
+   - Endpoint: api/domicilio/consultar`
+     - Parámetros de consulta:
+       - `Departamento` 
+       - `Localidad` 
+
 ## Instrucciones de Uso:
 
 1. **Configuración del Entorno:**
